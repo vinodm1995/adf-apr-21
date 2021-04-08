@@ -68,6 +68,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Metadata1').output.childitems",
+						"type": "Expression"
+					},
 					"activities": [
 						{
 							"name": "Copy data1",
