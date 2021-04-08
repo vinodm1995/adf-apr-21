@@ -158,7 +158,9 @@
 										}
 									}
 								},
-								"fieldList": [],
+								"fieldList": [
+									"size"
+								],
 								"storeSettings": {
 									"type": "FileServerReadSettings",
 									"enablePartitionDiscovery": false
