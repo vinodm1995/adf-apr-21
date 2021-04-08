@@ -150,7 +150,13 @@
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "dsInFileSize",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"fileName": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								},
 								"fieldList": [],
 								"storeSettings": {
