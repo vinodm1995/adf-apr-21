@@ -56,7 +56,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "fileName",
-								"value": "@item().name"
+								"value": ""
 							}
 						}
 					]
