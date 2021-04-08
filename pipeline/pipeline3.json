@@ -184,7 +184,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@bool(1)",
+									"value": "@greater(item().size, 500)",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
