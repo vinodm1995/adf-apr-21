@@ -47,7 +47,15 @@
 					"items": {
 						"value": "@activity('Get Metadata1').output.childitems",
 						"type": "Expression"
-					}
+					},
+					"activities": [
+						{
+							"name": "Set variable1",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"userProperties": []
+						}
+					]
 				}
 			}
 		],
