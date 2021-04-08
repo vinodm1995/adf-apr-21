@@ -15,10 +15,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "FileServerLocation",
-				"fileName": {
-					"value": "@dataset().fileName",
-					"type": "Expression"
-				}
+				"fileName": "cars.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
