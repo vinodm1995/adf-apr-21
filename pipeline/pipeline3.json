@@ -238,6 +238,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@variables('skippedFiles')",
+						"type": "Expression"
+					},
 					"activities": [
 						{
 							"name": "Wait2",
