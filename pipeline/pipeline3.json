@@ -109,36 +109,6 @@
 							}
 						},
 						{
-							"name": "If Condition1",
-							"type": "IfCondition",
-							"dependsOn": [
-								{
-									"activity": "Get Metadata2",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								}
-							],
-							"userProperties": [],
-							"typeProperties": {
-								"expression": {
-									"value": "@if(item().size > 500, bool(0), bool(1))",
-									"type": "Expression"
-								},
-								"ifTrueActivities": [
-									{
-										"name": "Wait1",
-										"type": "Wait",
-										"dependsOn": [],
-										"userProperties": [],
-										"typeProperties": {
-											"waitTimeInSeconds": 1
-										}
-									}
-								]
-							}
-						},
-						{
 							"name": "Copy data1",
 							"type": "Copy",
 							"dependsOn": [],
