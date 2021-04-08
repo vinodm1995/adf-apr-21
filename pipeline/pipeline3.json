@@ -206,6 +206,19 @@
 									}
 								]
 							}
+						},
+						{
+							"name": "Append variable1",
+							"type": "AppendVariable",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "copiedFiles",
+								"value": {
+									"value": "@item().name",
+									"type": "Expression"
+								}
+							}
 						}
 					]
 				}
@@ -214,6 +227,9 @@
 		"variables": {
 			"fileName": {
 				"type": "String"
+			},
+			"copiedFiles": {
+				"type": "Array"
 			}
 		},
 		"annotations": []
