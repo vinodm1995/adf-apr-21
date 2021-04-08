@@ -50,7 +50,7 @@
 						"type": "Expression"
 					},
 					"condition": {
-						"value": "@startswith(item().name, 'df')",
+						"value": "@startswith(item().name, 'cars')",
 						"type": "Expression"
 					}
 				}
