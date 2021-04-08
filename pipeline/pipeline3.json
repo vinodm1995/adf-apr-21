@@ -150,17 +150,9 @@
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "dsInFileSize",
-									"type": "DatasetReference",
-									"parameters": {
-										"fileName": {
-											"value": "@item.name",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								},
-								"fieldList": [
-									"size"
-								],
+								"fieldList": [],
 								"storeSettings": {
 									"type": "FileServerReadSettings",
 									"enablePartitionDiscovery": false
