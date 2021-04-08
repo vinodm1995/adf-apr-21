@@ -125,6 +125,21 @@
 									"value": "@greater(activity('Get Metadata2').output.size, 500)",
 									"type": "Expression"
 								},
+								"ifFalseActivities": [
+									{
+										"name": "Append variable1",
+										"type": "AppendVariable",
+										"dependsOn": [],
+										"userProperties": [],
+										"typeProperties": {
+											"variableName": "skippedFiles",
+											"value": {
+												"value": "@item().name",
+												"type": "Expression"
+											}
+										}
+									}
+								],
 								"ifTrueActivities": [
 									{
 										"name": "Copy data1",
@@ -206,19 +221,6 @@
 									}
 								]
 							}
-						},
-						{
-							"name": "Append variable1",
-							"type": "AppendVariable",
-							"dependsOn": [],
-							"userProperties": [],
-							"typeProperties": {
-								"variableName": "copiedFiles",
-								"value": {
-									"value": "@item().name",
-									"type": "Expression"
-								}
-							}
 						}
 					]
 				}
@@ -236,10 +238,6 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
-					"items": {
-						"value": "@variables('copiedFiles')",
-						"type": "Expression"
-					},
 					"activities": [
 						{
 							"name": "Wait2",
@@ -258,7 +256,7 @@
 			"fileName": {
 				"type": "String"
 			},
-			"copiedFiles": {
+			"skippedFiles": {
 				"type": "Array"
 			}
 		},
