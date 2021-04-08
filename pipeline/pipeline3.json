@@ -46,7 +46,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Metadata1').output.childitems",
+						"value": "@activity('Filter1').output.Value",
 						"type": "Expression"
 					},
 					"activities": [
@@ -57,7 +57,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "fileName",
-								"value": ""
+								"value": "@item.name"
 							}
 						}
 					]
