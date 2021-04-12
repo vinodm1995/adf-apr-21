@@ -6,9 +6,8 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"Filename": {
-				"type": "string",
-				"defaultValue": "planes.csv"
+			"Table name": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -43,7 +42,10 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "@dataset().tableName"
+			"table": {
+				"value": "@dataset().tableName",
+				"type": "Expression"
+			}
 		}
 	}
 }
