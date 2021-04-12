@@ -5,6 +5,12 @@
 			"referenceName": "lsSQL",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Filename": {
+				"type": "string",
+				"defaultValue": "planes.csv"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [
