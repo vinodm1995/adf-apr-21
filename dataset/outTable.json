@@ -43,10 +43,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": {
-				"value": "@dataset().Filename",
-				"type": "Expression"
-			}
+			"table": "@dataset().tableName"
 		}
 	}
 }
